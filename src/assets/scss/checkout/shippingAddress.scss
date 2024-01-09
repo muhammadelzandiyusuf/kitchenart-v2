@@ -1,0 +1,51 @@
+@import "../variables/colors";
+
+// Form Add Shipping Address
+.text__name-receiver {
+  width: 55% !important;
+  padding-right: 5% !important;
+}
+.text__city-district {
+  width: 65% !important;
+  padding-right: 5% !important;
+}
+.floating-panel {
+  position: absolute !important;
+  top: 25%;
+  left: 5%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  padding-left: 10px;
+}
+.list-shipping-address {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.list-shipping-address__active {
+  padding: 10px;
+  border: 1px solid #CA0C0C;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn__update-address {
+  color: #F7BF00;
+}
+.css-yk16xz-control {
+  height: 55px;
+}
+.css-1pahdxg-control {
+  min-height: 55px !important;
+}
+.css-26l3qy-menu {
+  z-index: 3 !important;
+}
+.pac-container {
+  z-index: 9999 !important;
+}

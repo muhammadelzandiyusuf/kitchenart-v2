@@ -1,0 +1,505 @@
+@import "variables/colors";
+@media (min-width: 481px) and (max-width: 768px) {
+  .typography__title {
+    font-size: 1.6rem !important;
+  }
+  .style__view--desktop {
+    display: none !important;
+  }
+  .style__view--mobile {
+    display: block !important;
+  }
+  .bgc-form {
+    background-color: $grey-background;
+  }
+  .register-socmed {
+    padding: 0 20px 20px;
+  }
+  .title__image__menu {
+    width: 50%;
+  }
+  .menu__left__title {
+    margin: 10px 15px 0 !important;
+    font-size: 18px !important;
+  }
+  .link__menu {
+    font-size: 18px !important;
+    color: $black !important;
+    margin-left: 0 !important;
+  }
+  .text__name {
+    width: 100% !important;
+  }
+  .text__name-business-partner {
+    width: 80% !important;
+  }
+
+  // Product
+  .product {
+    margin-right: 8px !important;
+    margin-bottom: 8px !important;
+    background: $white 0 0 no-repeat padding-box;
+  }
+  .product__box {
+    padding: 0 !important;
+  }
+  .product__ml-8 {
+    margin-left: 8px !important;
+  }
+  .product__info {
+    margin-bottom: 0 !important;
+  }
+  .mobile__filter__content--accordion .filter__checkbox {
+    width: 99% !important;
+  }
+
+  //Skeleton
+  .skeleton__card__mobile {
+    margin: 10px 5px;
+  }
+
+  //Product Compare
+  .product__compare {
+    padding: 10px 0% !important;
+  }
+  .product__compare__title__text{
+    text-align: center !important;
+    padding-top: 0px !important;
+  }
+  .product__compare__box__button {
+    text-align: center;
+    margin-top: 20px !important;
+  }
+  .banner__image {
+    width: auto !important;
+    height: 300px !important;
+  }
+  .box__event {
+    height: 70px !important;
+  }
+  .font__date {
+    font-size: 14px !important;
+  }
+  .font__count__date {
+    font-size: 14px !important;
+  }
+  .product__detail__related .slick-slider .slick-list {
+    padding: 0 !important;
+  }
+  .product__detail__button {
+    width: 100% !important;
+  }
+  .product__detail__about--tab {
+    margin: 0 0 !important;
+  }
+
+  // Trade In
+  .tradein__contact {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+  .tradein__contact__box {
+    width: 100% !important;
+  }
+  .btn-submit {
+    width: 30% !important;
+  }
+  .border-bottom-mobile {
+    border-bottom: 1px solid $border-color !important;
+  }
+  .right-to-left {
+    text-align: left !important;
+  }
+  .center-to-left {
+    text-align: left !important;
+  }
+  .width60-to-100 {
+    width: 100% !important;
+  }
+
+  // Cart
+  .cart__summary {
+    margin-top: 0 !important;
+  }
+
+  // Checkout
+  .summary__billing__detail {
+    margin-right: 0 !important;
+  }
+
+  // Verification
+  .vi__container {
+    padding-left: 18% !important;
+  }
+  .btn__confirm {
+    width: 30% !important;
+  }
+
+  .dashboard {
+    padding: 0 !important;
+  }
+  .filter__button {
+    width: 50% !important;
+  }
+  .filter__popup {
+    width: 42.5% !important;
+  }
+  .shadow__box__share {
+    width: 100% !important;
+  }
+
+  // Help
+  .help-list {
+    margin: 15px 15px 0 15px !important;
+  }
+  .icon-img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .text__help-list {
+    margin: 10px 10px !important;
+    font-size: 18px !important;
+  }
+
+  // Help Detail
+  .content {
+    margin-right: 16px !important;
+    margin-top: 0 !important;
+  }
+
+  // History Order
+  .search {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .p-form {
+    padding: 0 20px 20px;
+  }
+  .register-socmed {
+    padding: 0 20px 20px;
+  }
+  .style__view--desktop {
+    display: none !important;
+  }
+  .style__view--mobile {
+    display: block !important;
+  }
+  .typography__title {
+    font-size: 2.5rem !important;
+  }
+  .btn__google span {
+    left: 35% !important;
+    transform: translateX(-35%) !important;
+  }
+  .btn__facebook i {
+    margin-right: 33% !important;
+  }
+  .bgc-form {
+    background-color: $grey-background;
+  }
+  .primary__navbar___spacecontent {
+    margin-bottom: 57px;
+  }
+  .home__navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .btn__bars {
+    height: 55px !important;
+    width: 55px !important;
+    margin-left: -16px !important;
+  }
+  .title__image__menu {
+    width: 70%;
+  }
+  .menu__left__title {
+    margin: 10px 15px 0 !important;;
+    font-size: 18px !important;;
+  }
+  .link__menu {
+    font-size: 18px !important;
+    color: $black !important;
+    margin-left: 0 !important;
+  }
+  .text__name {
+    width: 100% !important;
+  }
+  .text__name-business-partner {
+    width: 80% !important;
+  }
+
+  // Product
+  .product {
+    margin-right: 8px !important;
+    margin-bottom: 8px !important;
+    background: $white 0 0 no-repeat padding-box;
+  }
+  .product__header {
+    height: 180px !important;
+  }
+  .product__header__image {
+    width: 100% !important;
+  }
+  .product__box {
+    padding: 0 !important;
+  }
+  .product__ml-8 {
+    margin-left: 8px !important;
+  }
+  .product__view {
+    padding: 0 !important;
+  }
+  .product__info {
+    min-height: 100px !important;
+    margin-bottom: 0 !important;
+  }
+  .product__normal__price {
+    font-size: 12px !important;
+  }
+  .product__net__price {
+    font-size: 14px !important;
+  }
+  .product__name{
+    font-size: 13px !important;
+  }
+  .product__action {
+    margin-top: 5px !important;
+  }
+  .product__box__price {
+    margin-bottom: 0 !important;
+  }
+  .product__action__btn--action .fs-14 .MuiFormControlLabel-label {
+    font-size: 12px !important;
+  }
+  .product__action__btn--action .fs-14 .MuiCheckbox-root{
+    padding: 0 10px !important;
+  }
+  .product__action__btn--action .fs-14 .MuiCheckbox-root .MuiIconButton-label .MuiSvgIcon-root {
+    font-size: 14px !important;
+  }
+  .product__action__installment {
+    font-size: 12px !important;
+  }
+  .product__action__button {
+    font-size: 12px !important;
+  }
+  .mobile__filter__content--accordion .filter__checkbox {
+    width: 97% !important;
+  }
+  .label__discount__shipping {
+    width: 68% !important;
+    font-size: 11px !important;
+  }
+  .label__wholesale {
+    width: 23% !important;
+    font-size: 11px !important;
+  }
+
+  //Skeleton
+  .skeleton__card__mobile {
+    margin: 10px 5px;
+  }
+
+  //Product Compare
+  .product__compare {
+    padding: 5px 0% !important;
+  }
+  .product__compare__title__text{
+    text-align: center !important;
+    padding-top: 0px !important;
+  }
+  .product__compare__box__button {
+    text-align: center;
+    margin-top: 20px !important;
+  }
+  .product__compare__button {
+    width: 100%;
+  }
+  .compare__box{
+    left: 0% !important;
+    right: 0% !important;
+  }
+  .product__detail__image .slick-prev {
+    top: 40% !important;
+    left: -5% !important;
+  }
+  .product__detail__image .slick-next {
+    top: 40% !important;
+    right: -9% !important;
+  }
+  .slick-list {
+    left: 1% !important;
+  }
+
+  //Parent Category
+  .category__description__text {
+    padding: 4% 10% 10% 10% !important;
+    text-align: left !important;
+  }
+  .category__description__text--button {
+    text-align: left !important;
+    padding-bottom: 30px !important;
+    padding-left: 10%;
+  }
+  .category__image {
+    width: 153px !important;
+    height: 139px !important;
+  }
+  .category__detail {
+    padding: 0 !important;
+  }
+  .category__text {
+    font-size: 16px !important;
+  }
+  .category__product__lines {
+    font-size: 22px !important;
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+  }
+  .category__product__lines--box {
+    padding-bottom: 40px !important;
+  }
+  .banner__image {
+    width: auto !important;
+    height: 300px !important;
+  }
+  .box__event {
+    height: 70px !important;
+  }
+  .font__date {
+    font-size: 14px !important;
+  }
+  .font__count__date {
+    font-size: 14px !important;
+  }
+  .product__detail__related .slick-slider .slick-list {
+    padding: 0 !important;
+  }
+  .product__detail__button {
+    width: 100% !important;
+  }
+  .product__detail__about--tab {
+    margin: 0 0 !important;
+  }
+
+  // Trade In
+  .tradein__contact {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+  .tradein__contact__box {
+    width: 100% !important;
+  }
+  .btn-submit {
+    width: 30% !important;
+  }
+  .border-bottom-mobile {
+    border-bottom: 1px solid $border-color !important;
+  }
+  .right-to-left {
+    text-align: left !important;
+  }
+  .center-to-left {
+    text-align: left !important;
+  }
+  .width60-to-100 {
+    width: 100% !important;
+  }
+
+  // Cart
+  .cart__summary {
+    margin-top: 0 !important;
+  }
+
+  // Checkout
+  .summary__billing__detail {
+    margin-right: 0 !important;
+  }
+
+  // Verification
+  .vi__container {
+    padding-left: 5% !important;
+  }
+  .btn__confirm {
+    width: 30% !important;
+  }
+
+  .dashboard {
+    padding: 0 !important;
+  }
+  .filter__button {
+    width: 50% !important;
+  }
+  .filter__popup {
+    width: 42.5% !important;
+  }
+
+  // History Order
+  .box__history-order-menu {
+    padding: 0 !important;
+    font-size: 14px !important;
+  }
+  .count-order {
+    margin-left: 0 !important;
+  }
+  .img-menu {
+    width: 60% !important;
+  }
+  .select-date {
+    width: 100% !important;
+  }
+  .header-list {
+    height: 60px !important;
+  }
+  .img-product {
+    width: 70px !important;
+  }
+  .product-list {
+    padding-top: 10px !important;
+  }
+  .complete-payment {
+    text-align: right !important;
+  }
+  .shadow__box__share {
+    width: 100% !important;
+  }
+  .photo-complaint {
+    width: 90% !important;
+    height: 55px !important;
+  }
+  .search {
+    width: 96% !important;
+  }
+  .menu {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .menu-list {
+    padding: 0 !important;
+  }
+
+  // Help
+  .help-list {
+    margin: 15px 15px 0 15px !important;
+  }
+  .icon-img {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: 7px !important;
+  }
+  .text__help-list {
+    margin: 10px 7px !important;
+    font-size: 16px !important;
+  }
+
+  // Help Detail
+  .content {
+    margin-right: 16px !important;
+    margin-top: 0 !important;
+  }
+}

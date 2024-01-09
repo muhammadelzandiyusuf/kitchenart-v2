@@ -1,0 +1,98 @@
+@import "../variables/colors";
+
+// Product Item
+.product {
+  background: $white;
+  padding: 15px;
+  border-radius: 7px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+.product:hover {
+  background: $white 0 0 no-repeat padding-box;
+  box-shadow: 0 3px 20px $grey-shadow;
+  cursor: pointer;
+}
+.product__header {
+  position: relative;
+  height: 220px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.product__header__image {
+  width: 60%;
+}
+.product__info {
+  min-height: 80px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.product__action {
+  padding-top: 0;
+}
+.product__action__btn--action {
+  display: inline-block;
+  overflow: auto;
+}
+.product__action__button {
+  font-size: 14px;
+}
+.product__action__installment {
+  padding: 5px 15px;
+  border: 1px solid $border-color;
+  color: $primary;
+  text-align: center;
+  font-size: 14px;
+}
+.product__action__btn--action .fs-14 .MuiFormControlLabel-label {
+  font-size: 15px;
+  color: $grey-bold;
+}
+.product__action__btn--action .wishlist {
+  width: 10%;
+}
+.product__box {
+  padding: 30px;
+}
+.product__ml-8 {
+  margin-left: 0;
+}
+.product__view {
+  padding: 12px;
+}
+.product__normal__price {
+  font-size: 18px;
+}
+.product__net__price {
+  font-size: 20px;
+}
+.product__discount {
+  width: 35px;
+  height: 35px;
+}
+.product__name {
+  font-size: 15px;
+}
+.product__box__price {
+  padding-bottom: 20px;
+  height: 40px;
+}
+.label__discount__shipping {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  overflow: auto;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  color: $grey-bold;
+}
+.label__wholesale {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  overflow: auto;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  margin-left: 5px;
+  color: $orange;
+}

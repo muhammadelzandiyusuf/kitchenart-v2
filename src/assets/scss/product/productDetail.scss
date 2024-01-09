@@ -1,0 +1,187 @@
+@import "../variables/colors";
+
+.multiple__slide__image {
+  padding: 5px;
+  border: 1px solid $border-color;
+  outline: none;
+}
+.multiple__slide__image--active {
+  border-color: $primary;
+}
+.multiple__slide__image--primary {
+  padding: 20px;
+}
+.product__detail__info {
+  padding: 5px 0;
+}
+
+// Custom Slick Slider Vertical
+.slick-prev, .slick-next {
+  font-size: 15px !important;
+}
+.product__detail__image .slick-prev {
+  top: -4% !important;
+  left: 40% !important;
+}
+.product__detail__image .slick-next {
+  top: 102% !important;
+  right: 40% !important;
+}
+.slick-prev:before, .slick-next:before  {
+  content: '' !important;
+}
+.slick-track {
+  height: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+// Countdown
+.product__detail__countdown {
+  padding: 20px 0;
+}
+.product__detail__countdown span {
+  margin-left: 10px;
+  padding: 5px;
+  color: $white;
+  background-color: $black;
+}
+
+// About Product
+.product__detail__about--tab {
+  margin: 0 20%;
+}
+.product__detail__description img {
+  width: 100%;
+}
+.specification__color {
+  height: 20px;
+  width: 20px;
+  border-color: $border-color;
+}
+.product__detail__videos {
+  padding: 16px;
+}
+.product__detail__videos .slick-slider .slick-list {
+  left: 0;
+}
+
+// Related Product
+.product__detail__related .slick-slider .slick-list {
+  padding: 16px !important;
+  left: 0;
+}
+.product__detail__related--button {
+  font-size: 12px !important;
+  border-radius: 0 !important;
+  border-color: $primary !important;
+  background-color: $primary !important;
+  color: $white !important;
+  text-transform: capitalize;
+}
+.p-10-40 {
+  padding: 10px 40px !important;
+}
+.p-10-4 {
+  padding: 10px 4px !important;
+}
+
+// Simualation Installment
+.product__detail__installment--box {
+  width: 18%;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 7px;
+  border: 1px solid $border-color;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+h2 .title {
+  font-size: 17px !important;
+}
+
+//Product Discussion
+.discussion__question__product {
+  background: $white 0 0 no-repeat padding-box;
+  box-shadow: 0px 3px 6px $shadow-product;
+  border-radius: 5px;
+}
+.discussion__question--avatar {
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 12px !important;
+}
+.discussion__question--reply{
+  outline: $primary;
+  font-family: 'Segoe-UI';
+  font-size: 14px;
+  resize: none;
+  padding: 5px;
+}
+.product__detail__add__product {
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  border: 1px solid $border-color;
+}
+.product__detail__add__product::-webkit-scrollbar {
+  width: 12px;
+}
+.product__detail__add__product::-webkit-scrollbar-button {
+  display: block;
+  width: 5px;
+  height: 15px;
+  background-color: $grey-smooth;
+  border-style: solid;
+}
+.product__detail__add__product::-webkit-scrollbar-button:decrement:start {
+  border-width: 0 5px 8px 5px;
+  border-color: transparent transparent $dark-grey transparent;
+}
+.product__detail__add__product::-webkit-scrollbar-button:decrement:end {
+  display: none;
+}
+.product__detail__add__product::-webkit-scrollbar-button:increment:start {
+  display: none;
+}
+.product__detail__add__product::-webkit-scrollbar-button:increment:end {
+  border-width: 8px 5px 0 5px;
+  border-color: $dark-grey transparent transparent transparent;
+}
+.product__detail__add__product::-webkit-scrollbar-track {
+  background-color: $grey-smooth;
+  height: 50%;
+}
+.product__detail__add__product::-webkit-scrollbar-thumb {
+  background-color: $dark-grey;
+  outline: 1px solid $slate-grey;
+}
+.box__reply {
+  padding: 8px 24px 16px 8px;
+}
+.shadow__box__share {
+  width: 75%;
+  box-shadow: 0px 3px 6px $grey-shadow;
+}
+.border__box__text {
+  border: 1px solid $text-grey;
+}
+.w-17-5 {
+  width: 17.5%;
+}
+.rating__detail .MuiRating-root {
+  color: $primary !important;
+}
+.progress__rating {
+  background-color: $color-grey-rating;
+  height: 20px;
+}
+.progress__rating--primary {
+  background-color: $primary;
+  height: 20px;
+}
+.border__left__primary {
+  border-left: 3px solid $primary;
+}

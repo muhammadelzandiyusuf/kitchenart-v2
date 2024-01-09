@@ -1,0 +1,66 @@
+@import "../variables/colors";
+
+.tc-gold {
+  color: $yellow-text;
+}
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: $primary !important;
+}
+.box-shadow-type-one {
+  box-shadow: 0 5px 10px $grey29;
+}
+.box-shadow-type-two {
+  box-shadow: 0 10px 5px $grey29;
+}
+.btn-add {
+  background-color: $grey-btn;
+  color: $white;
+}
+.btn-add:hover {
+  background-color: $text-grey;
+}
+.p-m-0 p {
+  margin: 0;
+  padding: 0;
+}
+.content__checkout__voucher {
+  max-height: 615px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+.content__checkout__voucher::-webkit-scrollbar {
+  width: 12px;
+}
+.content__checkout__voucher::-webkit-scrollbar-button {
+  display: block;
+  width: 5px;
+  height: 15px;
+  background-color: $grey-smooth;
+  border-style: solid;
+}
+.content__checkout__voucher::-webkit-scrollbar-button:decrement:start {
+  border-width: 0 5px 8px 5px;
+  border-color: transparent transparent $dark-grey transparent;
+}
+.content__checkout__voucher::-webkit-scrollbar-button:decrement:end {
+  display: none;
+}
+.content__checkout__voucher::-webkit-scrollbar-button:increment:start {
+  display: none;
+}
+.content__checkout__voucher::-webkit-scrollbar-button:increment:end {
+  border-width: 8px 5px 0 5px;
+  border-color: $dark-grey transparent transparent transparent;
+}
+.content__checkout__voucher::-webkit-scrollbar-track {
+  background-color: $grey-smooth;
+  height: 50%;
+}
+.content__checkout__voucher::-webkit-scrollbar-thumb {
+  background-color: $dark-grey;
+  outline: 1px solid $slate-grey;
+}
+.summary__billing__detail {
+  margin-right: 30%;
+}

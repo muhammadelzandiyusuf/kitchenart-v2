@@ -1,0 +1,18 @@
+@import "../variables/colors";
+
+.tab__box__shadow {
+  box-shadow: 0 10px 20px #00000029 inset;
+}
+.mw-100 {
+  min-width: 100px !important;
+  max-width: 350px !important;
+  text-transform: capitalize !important;
+  font-size: 14px !important;
+  color: $text-grey;
+}
+.MuiTab-textColorSecondary.Mui-selected {
+  color: $primary !important;
+}
+.MuiTabs-indicator {
+  background-color: $primary !important;
+}

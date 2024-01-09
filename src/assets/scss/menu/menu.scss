@@ -1,0 +1,145 @@
+@import "../variables/colors";
+
+.list__menu {
+    font-size: 15px;
+    text-decoration: none;
+}
+.list__menu__top {
+    padding-right: 20px;
+    color: $white !important;
+}
+.list__menu__top:hover {
+    text-decoration: none !important;
+    color: $grey-bold !important;
+}
+// Menu
+.menu {
+    background-color: $white;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid $slate-grey;
+}
+.menu__left {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.menu__left--navbar {
+    height: 570px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.menu__left--filter {
+    height: 685px;
+    padding: 25px 10px 15px;
+}
+.menu__left::-webkit-scrollbar {
+    width: 12px;
+}
+.menu__left::-webkit-scrollbar-button {
+    display: block;
+    width: 5px;
+    height: 15px;
+    background-color: $slate-grey;
+    border-style: solid;
+}
+.menu__left::-webkit-scrollbar-button:decrement:start {
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent $dark-grey transparent;
+}
+.menu__left::-webkit-scrollbar-button:decrement:end {
+    display: none;
+}
+.menu__left::-webkit-scrollbar-button:increment:start {
+    display: none;
+}
+.menu__left::-webkit-scrollbar-button:increment:end {
+    border-width: 8px 5px 0 5px;
+    border-color: $dark-grey transparent transparent transparent;
+}
+.menu__left::-webkit-scrollbar-track {
+    background-color: $slate-grey;
+    height: 50%;
+}
+.menu__left::-webkit-scrollbar-thumb {
+    background-color: $dark-grey;
+    outline: 1px solid $slate-grey;
+}
+.menu__left__title {
+    text-transform: uppercase;
+    margin: 16px 0 5px 26px;
+    font-size: 14px;
+}
+.MuiListItemText-primary{
+    font-size: 14px !important;
+}
+.MuiListItemText-secondary{
+    font-size: 18px !important;
+    color: $black !important;
+}
+.menu__item {
+    padding: 20px;
+}
+.menu__item__right {
+    height: 458px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.menu__item__right::-webkit-scrollbar {
+    width: 12px;
+}
+.menu__item__right::-webkit-scrollbar-button {
+    display: block;
+    width: 5px;
+    height: 15px;
+    background-color: $grey-smooth;
+    border-style: solid;
+}
+.menu__item__right::-webkit-scrollbar-button:decrement:start {
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent $dark-grey transparent;
+}
+.menu__item__right::-webkit-scrollbar-button:decrement:end {
+    display: none;
+}
+.menu__item__right::-webkit-scrollbar-button:increment:start {
+    display: none;
+}
+.menu__item__right::-webkit-scrollbar-button:increment:end {
+    border-width: 8px 5px 0 5px;
+    border-color: $dark-grey transparent transparent transparent;
+}
+.menu__item__right::-webkit-scrollbar-track {
+    background-color: $grey-smooth;
+    height: 50%;
+}
+.menu__item__right::-webkit-scrollbar-thumb {
+    background-color: $dark-grey;
+    outline: 1px solid $slate-grey;
+}
+.link__menu {
+    margin-left: 7px !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+}
+.link__menu__title {
+    margin-left: 6px;
+    font-size: 25px;
+}
+
+// Menu Tree
+.MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label {
+    background-color: rgba(0, 0, 0, 0.08) !important;
+}
+.MuiTreeView-root .tree__parent .MuiTreeItem-content .MuiTreeItem-label {
+    font-size: 20px !important;
+    font-family: 'Segoe-UI-Bold';
+    padding: 7px;
+}
+.MuiTreeView-root .MuiTreeItem-group .tree__child .MuiTreeItem-content .MuiTreeItem-label {
+    font-size: 18px !important;
+    font-family: 'Segoe-UI-Bold';
+}
+.MuiTreeView-root .MuiTreeItem-group .tree__sub__child .MuiTreeItem-content .MuiTreeItem-label {
+    font-size: 16px !important;
+    font-family: 'Segoe-UI';
+}

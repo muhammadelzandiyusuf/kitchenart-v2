@@ -1,0 +1,67 @@
+[
+  {
+    "icon": "th",
+    "name": "My Kitchenart",
+    "href": "dashboard"
+  },
+  {
+    "icon": "user",
+    "name": "Profil",
+    "href": "profile"
+  },
+  {
+    "icon": "archive",
+    "name": "Riwayat Pesanan",
+    "href": "history-order"
+  },
+  {
+    "icon": "concierge-bell",
+    "name": "Komplain Pesanan",
+    "href": "order-complaint"
+  },
+  {
+    "icon": "store-alt-slash",
+    "name": "Pembatalan Pesanan",
+    "href": "order-cancellation"
+  },
+  {
+    "icon": "bookmark",
+    "name": "Wishlist",
+    "href": "wishlist"
+  },
+  {
+    "icon": "history",
+    "name": "Riwayat Product",
+    "href": "product-history"
+  },
+  {
+    "icon": "chart-pie",
+    "name": "Balance",
+    "href": "balance"
+  },
+  {
+    "icon": "ticket-alt",
+    "name": "Voucher",
+    "href": "voucher"
+  },
+  {
+    "icon": "comment-alt",
+    "name": "Diskusi Produk",
+    "href": "product-discussion"
+  },
+  {
+    "icon": "retweet",
+    "name": "Trade In",
+    "href": "tradein"
+  },
+  {
+    "icon": "user-friends",
+    "name": "Referral Program",
+    "href": "referral-program"
+  },
+  {
+    "icon": "money-check",
+    "name": "Komisi",
+    "href": "commission"
+  }
+]

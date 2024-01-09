@@ -1,0 +1,1 @@
+export const totalWishlistSelector = state => state.wishlist.totalWishlist;

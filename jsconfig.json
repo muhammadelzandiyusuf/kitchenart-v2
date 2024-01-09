@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "baseUrl": "./src",
+    "sourceMap": true,
+    "paths": {
+      "components": [
+        "./components"
+      ],
+      "containers": [
+        "./containers"
+      ],
+      "configs": [
+        "./configs"
+      ],
+      "libraries": [
+        "./libraries"
+      ],
+      "modules": [
+        "./modules"
+      ],
+      "utils": [
+        "./utils"
+      ],
+      "pages": [
+        "./pages"
+      ],
+      "assets": [
+        "./assets"
+      ],
+      "services": [
+        "./services"
+      ],
+      "locales": [
+        "./locales"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

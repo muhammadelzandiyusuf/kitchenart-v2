@@ -1,0 +1,1 @@
+export const bannerSelector = state => state.banner.banners;

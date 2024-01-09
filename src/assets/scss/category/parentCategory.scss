@@ -1,0 +1,31 @@
+@import "../variables/colors";
+
+// Parent Category
+.category__description__box {
+  background-color: $background-black;
+  color: $white;
+}
+.category__description__text {
+  padding: 4% 25% 2% 25%;
+}
+
+// Parent Category Product Lines
+.category__detail {
+  padding: 0 10%;
+}
+.category__image {
+  width: 298px;
+  height: 271px;
+}
+.category__text {
+  padding: 0 11%;
+  font-size: 20px;
+}
+.category__product__lines {
+  font-size: 34px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.category__product__lines--box {
+  padding-bottom: 80px;
+}

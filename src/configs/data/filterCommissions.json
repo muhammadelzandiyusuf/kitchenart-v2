@@ -1,0 +1,41 @@
+{
+  "filterType": [
+    {
+      "nameEn": "All Transaction",
+      "nameId": "Semua Transaksi",
+      "value": "all"
+    },
+    {
+      "nameEn": "Commission Income",
+      "nameId": "Pemasukan Komisi",
+      "value": "credit"
+    },
+    {
+      "nameEn": "Commission Withdrawals",
+      "nameId": "Penarikan Komisi",
+      "value": "debit"
+    }
+  ],
+  "filterPeriod": [
+    {
+      "nameEn": "All Period",
+      "nameId": "Semua Periode",
+      "value": 0
+    },
+    {
+      "nameEn": "Last 1 Week",
+      "nameId": "1 Minggu Terakhir",
+      "value": 7
+    },
+    {
+      "nameEn": "Last 2 Week",
+      "nameId": "2 Minggu Terakhir",
+      "value": 14
+    },
+    {
+      "nameEn": "Last 1 Month",
+      "nameId": "1 Bulan Terakhir",
+      "value": 30
+    }
+  ]
+}

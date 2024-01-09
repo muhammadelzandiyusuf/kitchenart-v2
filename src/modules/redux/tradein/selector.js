@@ -1,0 +1,1 @@
+export const tradeInContentSelector = state => state.tradein.tradeInContent;

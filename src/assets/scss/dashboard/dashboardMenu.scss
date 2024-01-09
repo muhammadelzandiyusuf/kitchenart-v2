@@ -1,0 +1,15 @@
+@import "../variables/colors";
+
+.dashboard {
+  padding: 24px 7%;
+}
+.fs-20 .MuiListItemText-primary {
+  font-size: 20px !important;
+}
+.MuiListItem-gutters {
+  padding-right: 32px !important;
+  padding-left: 32px !important;
+}
+.MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+  background-color: $pink !important;
+}

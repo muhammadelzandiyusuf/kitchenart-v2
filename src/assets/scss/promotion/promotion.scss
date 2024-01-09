@@ -1,0 +1,15 @@
+@import "../variables/colors";
+
+.promotion__image {
+  box-sizing: border-box;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.promotion__detail {
+  box-shadow: -3px -3px 6px $shadow-detail;
+  border: 1px solid $border-color;
+}
+.promotion__info {
+  margin-top: 54px;
+}

@@ -1,0 +1,13 @@
+@import "../variables/colors";
+
+// Product Result
+.product__result {
+  border-radius: 7px;
+  border: 1px solid $border-color;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.product__result__text {
+  color: $grey-bold;
+  line-height: 1.5rem;
+}

@@ -1,0 +1,15 @@
+@import "../variables/colors";
+
+// TradeInContact
+.tradein__contact {
+  padding-right: 0;
+  padding-left: 0;
+}
+.tradein__contact__box {
+  width: 70%;
+  padding: 16px;
+  border: 1px solid $border-box-color;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+}

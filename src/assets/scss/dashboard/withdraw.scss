@@ -1,0 +1,9 @@
+@import "../variables/colors";
+
+.withdraw .MuiFormControlLabel-root {
+  margin-right: 4px;
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: $primary !important;
+}

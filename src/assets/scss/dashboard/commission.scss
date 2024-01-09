@@ -1,0 +1,18 @@
+@import "../variables/colors";
+
+.commission .MuiFilledInput-underline:before {
+  border-bottom: none !important;
+}
+.commission .MuiFilledInput-underline:after {
+  border-bottom: none !important;
+}
+.commission .MuiSelect-selectMenu {
+  color: $text-grey;
+  background-color: $color-f7;
+}
+.commission .MuiOutlinedInput-notchedOutline {
+  border-color: $color-f7;
+}
+.commission .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-color: $color-f7;
+}

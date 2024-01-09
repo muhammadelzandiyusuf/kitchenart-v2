@@ -1,0 +1,115 @@
+trigger:
+- master
+- release/*
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+  - job: build_react
+    displayName: Build React App
+    steps:
+        - checkout: self
+          persistCredentials: true
+        - task: NodeTool@0
+          inputs:
+            versionSpec: '12.x'
+          displayName: 'Install Node.js'
+        - task: S3Download@1
+          condition: |
+            and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/release/'))
+          displayName: 'Download Staging ENV File'
+          inputs:
+            awsCredentials: 'AWS-CI-CD-ServiceConnection'
+            regionName: 'ap-southeast-1'
+            bucketName: 'kitchenart-environment-variables'
+            sourceFolder: 'staging'
+            globExpressions: 'ka_web_ecommerce.env'
+            targetFolder: '$(System.DefaultWorkingDirectory)'
+        - script: |
+            mv $(System.DefaultWorkingDirectory)/staging/ka_web_ecommerce.env $(Build.SourcesDirectory)/.env
+          condition: |
+            and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/release/'))
+          displayName: 'Create Staging ENV'
+        # - task: DownloadSecureFile@1
+        #   condition: |
+        #     and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/release/'))
+        #   displayName: 'Download Staging ENV File'
+        #   name: kaWebStagingEnv
+        #   inputs:
+        #     secureFile: 'kaWebStagingEnv'
+        # - script: |
+        #     mv $(Agent.TempDirectory)/kaWebStagingEnv $(Build.SourcesDirectory)/.env.production.local
+        #   condition: |
+        #     and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/release/'))
+        #   displayName: 'Create ENV Staging'
+        - task: DownloadSecureFile@1
+          condition: |
+            and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/master/'))
+          displayName: 'Download Production ENV File'
+          name: kaWebProductionEnv
+          inputs:
+            secureFile: 'kaWebProductionEnv'
+        - script: |
+            mv $(Agent.TempDirectory)/kaWebProductionEnv $(Build.SourcesDirectory)/.env.production.local
+          condition: |
+            and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/master/'))
+          displayName: 'Create ENV Production'
+        - task: CmdLine@2
+          displayName: 'npm install and build'
+          inputs:
+            script: |
+              npm install
+              npm run build
+        - task: CopyFiles@2
+          inputs:
+            SourceFolder: '$(Build.SourcesDirectory)/build'
+            Contents: '**'
+            TargetFolder: '$(build.artifactstagingdirectory)/build'
+            CleanTargetFolder: true
+            OverWrite: true
+          displayName: 'Copy Build Files'
+        - task: ArchiveFiles@2
+          inputs:
+            rootFolderOrFile: '$(Build.SourcesDirectory)/build/'
+            includeRootFolder: false
+            archiveType: 'zip'
+            archiveFile: '$(build.artifactstagingdirectory)/$(Build.BuildId).zip'
+            replaceExistingArchive: true
+          displayName: 'Archive Build Files'
+        - task: PublishBuildArtifacts@1
+          inputs:
+            PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+            ArtifactName: 'ka-web-ecommerce-archive-artifact'
+            publishLocation: 'Container'
+          displayName: 'Publish archive output files'
+        - task: PublishBuildArtifacts@1
+          inputs:
+            PathtoPublish: '$(Build.ArtifactStagingDirectory)/build'
+            ArtifactName: 'ka-web-ecommerce-build-artifact'
+            publishLocation: 'Container'
+          displayName: 'Publish build output files'
+
+  - job: set_version_tag
+    displayName: Set Version Tag
+    condition: |
+      and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/master'))
+    steps:
+      - checkout: self
+        persistCredentials: true
+      - task: NodeTool@0
+        inputs:
+          versionSpec: '12.x'
+        displayName: 'Install Node.js'
+      - script: |
+            export APP_VERSION=`node -p "require('./package.json').version"`
+            echo "Current version of package is $APP_VERSION"
+            echo "##vso[task.setvariable variable=currentAPPVersion]$APP_VERSION"
+            echo $APP_VERSION | tee VERSION
+        displayName: 'Get Package Version'
+      - script: |
+            git config --global user.name "KitchenArt Build Pipeline"
+            git config --global user.email "engineering@muliasuksesjaya.com"
+            git tag -a v$(currentAPPVersion) -m '$(Build.SourceVersionMessage)'
+            git push origin v$(currentAPPVersion)
+        displayName: 'Push Version Tag'

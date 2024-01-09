@@ -1,0 +1,19 @@
+@import "../variables/colors";
+.vi__container {
+  margin-top: 30px;
+  padding-left: 39%;
+}
+.character {
+  border-top: 1px solid transparent !important;
+  border-right: 1px solid transparent !important;
+  border-left: 1px solid transparent !important;
+  border-bottom: 1px solid $black !important;
+}
+.character--inactive {
+  background-color: $white !important;
+  border-bottom: 1px solid $grey !important;
+}
+.character--selected {
+  outline: 0 !important;
+  color: $black !important;
+}

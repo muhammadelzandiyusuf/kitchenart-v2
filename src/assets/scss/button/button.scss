@@ -1,0 +1,123 @@
+@import "../variables/colors";
+
+.btn--blue {
+  background-color: $blue-facebook;
+  color: $white;
+}
+.btn__facebook {
+  padding: 2px 10px 2px 4px;
+  border-radius: 25px;
+}
+.btn__facebook-profile {
+  padding: 2px 10px 2px 4px;
+}
+.btn__facebook i {
+  padding: 10px;
+  margin-right: 38%;
+  font-size: 18px;
+}
+.btn__facebook-profile i {
+  padding: 10px;
+  margin-right: 5%;
+  font-size: 18px;
+}
+.btn__google {
+  outline: none;
+  border-radius: 25px !important;
+}
+.btn__google-profile {
+  outline: none;
+}
+.btn__google div {
+  background-color: transparent !important;
+}
+.btn__google span {
+  position: relative;
+  left: 40%;
+  transform: translateX(-40%);
+}
+
+//Button Navbar
+.btn__bars {
+  color: $white !important;
+  background-color: $black !important;;
+  border-radius: 0 !important;;
+}
+.btn__bars:hover {
+  background-color: $black !important;;
+}
+.btn__bars--menu {
+  height: 64px;
+  width: 64px;
+}
+
+// Button Primary
+.btn__primary {
+  background-color: $primary !important;
+  color: $white !important;
+}
+.btn__primary:hover {
+  background-color: $primary-hover !important;
+}
+.btn__primary--text {
+  background-color: $white !important;
+  color: $primary !important;
+}
+.btn__primary--text:hover {
+  color: $primary-hover !important;
+}
+.product__detail__button {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  width: 50%;
+  padding: 8px !important;
+  border-radius: 0 !important;
+}
+.product__detail__button--installment {
+  border-color: $primary !important;
+  color: $black !important;
+}
+.product__detail__button--cart {
+  border-color: $primary !important;
+  background-color: $primary !important;
+  color: $white !important;
+}
+.product__detail__button--cart:hover {
+  background-color: $primary-hover !important;
+}
+.product__detail__button--stock {
+  border-color: $black !important;
+  background-color: $black !important;
+  color: $white !important;
+}
+.choose__location__button {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  width: 100%;
+  padding: 8px !important;
+  border-radius: 0 !important;
+}
+.btn__cart__quantity {
+  background-color: $bgc-button-grey !important;
+}
+.btn__default {
+  border: 1px solid $grey !important;
+  color: $black !important;
+  background-color: $white !important;
+}
+.btn__confirm {
+  width: 20%;
+}
+ .btn__disabled {
+   background-color: $bgc-button-grey !important;
+   color: $white !important;
+ }
+ .color__facebook {
+   color: $blue-facebook;
+ }
+ .color__twitter {
+   color: $blue-twitter;
+ }
+ .color__whatsapp {
+   color: $green-watsApp;
+ }

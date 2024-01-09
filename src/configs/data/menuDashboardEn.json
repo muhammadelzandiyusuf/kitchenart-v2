@@ -1,0 +1,67 @@
+[
+  {
+    "icon": "th",
+    "name": "My Kitchenart",
+    "href": "dashboard"
+  },
+  {
+    "icon": "user",
+    "name": "Profile",
+    "href": "profile"
+  },
+  {
+    "icon": "archive",
+    "name": "History Order",
+    "href": "history-order"
+  },
+  {
+    "icon": "concierge-bell",
+    "name": "Order Complaints",
+    "href": "order-complaint"
+  },
+  {
+    "icon": "store-alt-slash",
+    "name": "Order Cancellation",
+    "href": "order-cancellation"
+  },
+  {
+    "icon": "bookmark",
+    "name": "Wishlist",
+    "href": "wishlist"
+  },
+  {
+    "icon": "history",
+    "name": "Product History",
+    "href": "product-history"
+  },
+  {
+    "icon": "chart-pie",
+    "name": "Balance",
+    "href": "balance"
+  },
+  {
+    "icon": "ticket-alt",
+    "name": "Voucher",
+    "href": "voucher"
+  },
+  {
+    "icon": "comment-alt",
+    "name": "Product Discussion",
+    "href": "product-discussion"
+  },
+  {
+    "icon": "retweet",
+    "name": "Trade In",
+    "href": "tradein"
+  },
+  {
+    "icon": "user-friends",
+    "name": "Referral Program",
+    "href": "referral-program"
+  },
+  {
+    "icon": "money-check",
+    "name": "Commissions",
+    "href": "commission"
+  }
+]

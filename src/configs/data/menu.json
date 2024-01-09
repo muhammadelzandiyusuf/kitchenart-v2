@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Brands",
+    "icon": true
+  },
+  {
+    "id": 2,
+    "name": "Products",
+    "icon": true
+  },
+  {
+    "id": 3,
+    "name": "Event",
+    "icon": false
+  },
+  {
+    "id": 4,
+    "name": "Trade In",
+    "icon": false
+  },
+  {
+    "id": 5,
+    "name": "Culinary",
+    "icon": false
+  },
+  {
+    "id": 6,
+    "name": "Showroom & Exhibition",
+    "icon": false
+  }
+]

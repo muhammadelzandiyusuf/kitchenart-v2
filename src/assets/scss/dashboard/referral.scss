@@ -1,0 +1,10 @@
+@import "../variables/colors";
+
+.border-number {
+  border: 2px solid $grey-bold;
+  width: 40px;
+  height: 40px;
+}
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}

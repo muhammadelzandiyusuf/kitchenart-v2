@@ -1,0 +1,25 @@
+@import "../variables/colors";
+
+// Help
+.help-list {
+  margin: 30px 150px 32px 150px;
+}
+.text__help-list {
+  margin: 20px 25px;
+  font-size: 26px;
+}
+.icon-img {
+  width: 80px;
+  height: 80px;
+  margin-left: 16px;
+}
+
+// Help Detail
+.bl-menu {
+  border-left: #DFDFDF 4px solid;
+}
+.content {
+  margin-top: 80px;
+  margin-right: 100px;
+  margin-left: 16px;
+}

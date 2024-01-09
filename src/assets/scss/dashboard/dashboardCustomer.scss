@@ -1,0 +1,30 @@
+@import "../variables/colors";
+
+.fs-18 p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.dashboard__product {
+  background-color: $white;
+  color: $text-grey;
+  border-radius: 7px;
+}
+.dashboard__product:hover {
+  background: $white 0 0 no-repeat padding-box;
+  box-shadow: 0 3px 20px $grey-shadow;
+}
+.filter__button {
+  width: 40%;
+}
+.box-shadow-filter {
+  box-shadow: 0 3px 6px $box-shadow-dashboard;
+}
+.filter__popup {
+  width: 20.5%;
+}
+.text__color-hover {
+  color: $text-grey;
+}
+.text__color-hover:hover {
+  color: $primary;
+}

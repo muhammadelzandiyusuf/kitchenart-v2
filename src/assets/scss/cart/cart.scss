@@ -1,0 +1,12 @@
+@import "../variables/colors";
+
+.cart__summary {
+  box-shadow: 0 10px 5px $grey29;
+  margin-top: 20%;
+}
+.fs-14 .MuiTypography-body1 {
+  font-size: 14px !important;
+}
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: $primary !important;
+}

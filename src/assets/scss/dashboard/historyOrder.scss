@@ -1,0 +1,82 @@
+@import "../variables/colors";
+
+.MuiBadge-colorSecondary {
+  background-color: $primary;
+}
+.select__filter__date .MuiSelect-selectMenu {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+}
+.filter__button {
+  width: 80%;
+  height: 44px;
+}
+.complete-payment {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.box-shadow-filter {
+  box-shadow: 0 3px 6px $box-shadow-dashboard;
+}
+.filter__popup {
+  width: 20.5%;
+}
+.text__color-hover {
+  color: $text-grey;
+}
+.text__color-hover:hover {
+  color: $primary;
+}
+.tracking-content {
+  border-left: 1px solid $dark-grey;
+  padding: 5px 0 20px 30px;
+  margin-left: 8px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  color: $text-grey;
+}
+.tracking-content-last {
+  padding: 5px 0 20px 30px;
+  margin-left: 8px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  color: $text-grey;
+}
+.tracking-dot-active {
+  background-color: $primary;
+  border-radius: 10px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+.tracking-dot {
+  background-color: $dark-grey;
+  border-radius: 10px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+.tooltip {
+  min-width: 0;
+  padding: 0;
+  font-size: 12px;
+  top: -5px;
+  margin-left: 3px;
+}
+.photo-complaint {
+  width: 80%;
+  height: 100px;
+}
+.fs-16 .MuiTypography-body1 {
+  font-size: 16px !important;
+}
+.search {
+  width: 40%;
+}
+.menu {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.menu-list {
+  padding: 24px;
+}

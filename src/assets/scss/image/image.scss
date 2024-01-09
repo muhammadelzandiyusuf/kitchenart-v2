@@ -1,0 +1,9 @@
+.h-42 {
+  height: 42px;
+}
+.image__center-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

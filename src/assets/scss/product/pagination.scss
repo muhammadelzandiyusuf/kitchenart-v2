@@ -1,0 +1,14 @@
+@import "../variables/colors";
+
+// Pagination
+.pagination__box {
+  float: right;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.simple__pagination {
+  min-width: 40px !important;
+  height: 40px !important;
+  padding: 5px !important;
+  margin-right: 10px !important;
+}

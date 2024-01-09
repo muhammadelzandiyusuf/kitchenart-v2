@@ -1,0 +1,53 @@
+@import "../variables/colors";
+.helper-text {
+  padding: 0 10%;
+}
+.helper-text-file {
+  padding: 0 3%;
+  width: 180px;
+  font-size: 11px !important;
+}
+.helper-text-error {
+  padding: 0 3%;
+  color: #F44336 !important;
+}
+.text__city-district {
+  width: 45% !important;
+  padding-right: 5% !important;
+}
+.text__name {
+  width: 49%;
+}
+.text__name-business-partner {
+  width: 39%;
+}
+.img-file {
+  width: 146px;
+  border: 1px solid $grey-bold;
+  padding: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.img-error {
+  width: 146px;
+  border: 1px solid #F44336;
+  padding: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.uploaded-file {
+  width: 208px;
+  border: 1px solid $grey-bold;
+  border-radius: 15px;
+  height: 208px;
+  cursor: pointer;
+}
+.css-yk16xz-control {
+  height: 55px;
+}
+.css-1pahdxg-control {
+  min-height: 55px !important;
+}
+.css-26l3qy-menu {
+  z-index: 3 !important;
+}

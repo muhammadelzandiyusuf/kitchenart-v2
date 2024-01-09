@@ -1,0 +1,1 @@
+export const vendorSelector = state => state.shipment.vendors;

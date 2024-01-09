@@ -1,0 +1,66 @@
+@import "../variables/colors";
+
+// Product Compare
+.product__compare {
+  padding: 25px 2%;
+}
+.product__compare__title {
+  text-align: center;
+  font-size: 34px;
+  color: #2B2B2B;
+}
+.product__compare__title__text {
+  text-align: right;
+  font-size: 18px;
+  color: #2B2B2B;
+  padding-top: 5px;
+}
+.product__compare__box__button {
+  margin-left: 15px !important;
+}
+.product__compare__border {
+  border-left: 1px solid #D2CECE;
+}
+.product__compare__detail {
+  padding: 0 10%;
+}
+.product__compare__detail--name {
+  height: 6%;
+  color: $grey-bold;
+}
+.specification__color {
+  height: 20px;
+  width: 20px;
+  border-color: $border-color;
+}
+.product__compare__price {
+  color: $primary !important;
+}
+
+// Product Compare Button
+.product__compare__button--other {
+  color: $white !important;
+  background-color: $black !important;
+}
+.product__compare__button--reset {
+  border: 1px solid !important;
+}
+.product__compare__button {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  width: 90%;
+  padding: 8px !important;
+  border-radius: 0 !important;
+}
+.product__compare__button--wishlist {
+  border-color: $black !important;
+  color: $black !important;
+}
+.product__compare__button--cart {
+  border-color: $primary !important;
+  background-color: $primary !important;
+  color: $white !important;
+}
+.product__compare__button--cart:hover {
+  background-color: $primary-hover !important;
+}

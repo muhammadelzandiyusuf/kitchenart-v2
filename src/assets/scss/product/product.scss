@@ -1,0 +1,132 @@
+@import "../variables/colors";
+
+// Filter Menu
+.filter {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 32px;
+}
+.filter__menu {
+  width: 11.5%;
+  color: $color-filter !important;
+  text-transform: capitalize !important;
+}
+.filter__active {
+  background: $slate-grey 0 0 no-repeat padding-box;
+  background-color: $slate-grey !important;
+  box-shadow: 0 3px 6px $grey-shadow;
+}
+.filter__content {
+  width: 14%;
+  position: absolute;
+  padding: 10px;
+  z-index: 1;
+}
+.filter__content .MuiFormControlLabel-labelPlacementStart .MuiFormControlLabel-label {
+  font-size: 14px !important;
+  color: $grey-bold;
+}
+.filter__content .filter__checkbox .MuiFormGroup-root .MuiFormControlLabel-labelPlacementStart .MuiFormControlLabel-label{
+  position: absolute;
+  left: 15px;
+}
+.filter__content .filter__radio .MuiFormGroup-root .MuiFormControlLabel-root span.MuiRadio-colorSecondary{
+  margin-left: 145px;
+}
+.filter__content .filter__radio .MuiFormGroup-root .MuiFormControlLabel-root span.MuiTypography-body1{
+  position: absolute;
+  left: 15px;
+  width: 145px;
+}
+.filter__content .MuiRadio-colorSecondary.Mui-checked {
+  color: $grey-bold;
+}
+.mobile__filter {
+  background-color: $slate-grey;
+  text-align: right;
+  margin: 16px 8px 8px;
+  color: $grey-bold;
+  border-radius: 3px 0 0 3px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.mobile__filter__button {
+  background-color: $black !important;
+  color: $white !important;
+  border-radius: 0 !important;
+  font-size: 14px !important;
+  margin-left: 8px !important;
+}
+.mobile__filter__content {
+  background-color: $slate-grey;
+  padding: 5px;
+  margin: 0 8px 25px;
+  height: 510px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.mobile__filter__content--accordion {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.mobile__filter__content--accordion .MuiFormControlLabel-labelPlacementStart .MuiFormControlLabel-label {
+  font-size: 14px !important;
+  color: $grey-bold;
+}
+.mobile__filter__content--accordion .filter__checkbox .MuiFormGroup-root .MuiFormControlLabel-root .MuiFormControlLabel-label {
+  position: absolute;
+  left: 20px;
+}
+.mobile__filter__content--accordion .filter__radio {
+  width: 100%;
+}
+.mobile__filter__content--accordion .filter__radio .MuiRadio-colorSecondary.Mui-checked {
+  color: $grey-bold;
+}
+.mobile__filter__content--accordion .filter__radio .MuiFormGroup-root .MuiFormControlLabel-root .MuiFormControlLabel-label {
+  position: absolute;
+  left: 0;
+}
+.mobile__filter__content--accordion:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+.mobile__filter__content__button{
+  width: 100%;
+  color: $grey-bold !important;
+  box-shadow: none !important;
+}
+
+// Compare
+.compare__box {
+  border: 1px solid #707070;
+  background-color: $white;
+  position: fixed;
+  height: 59px;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  opacity: 1;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+}
+.compare {
+  margin-top: 12px;
+}
+.compare__text {
+  font-size: 16px;
+  color: #707070;
+  margin-top: 6px !important;
+}
+.product__compare {
+  padding: 24px 5%;
+}
+.product__count__down span {
+  margin-right: 8px;
+}
+.font__date {
+  font-size: 1.5rem;
+}
+.font__count__date {
+  font-size: 2.5rem;
+}

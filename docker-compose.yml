@@ -1,0 +1,125 @@
+version: '3'
+
+services:
+  nginx:
+    container_name: ka-nginx
+    image: nginx:1.17
+    volumes:
+      - ./nginx-local.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - uam_api
+      - cms_api
+      - core_api
+    ports:
+      - "8080:8080"
+
+  db:
+    image: postgres:11
+    container_name: ka-db
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+
+  pgadmin:
+    container_name: ka-pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: dev@kitchenart.id
+      PGADMIN_DEFAULT_PASSWORD: dev
+    ports:
+      - '5050:80'
+
+  redis:
+    container_name: ka-redis
+    image: redis:5
+    ports:
+      - '6379:6379'
+
+  rabbitmq:
+    container_name: ka-rabbitmq
+    image: rabbitmq:3.8-management
+    ports:
+      - '15672:15672'
+      - '5672:5672'
+    environment:
+      RABBITMQ_DEFAULT_USER: dev
+      RABBITMQ_DEFAULT_PASS: dev
+
+  elasticsearch:
+    image: 'elasticsearch:7.9.3'
+    container_name: 'ka-elasticsearch'
+    environment:
+      - cluster.name=kitchenart-elasticsearch-cluster
+      - network.host=0.0.0.0
+      - bootstrap.memory_lock=true
+      - discovery.type=single-node
+    ports:
+      - '9200:9200'
+
+  kibana:
+    image: 'kibana:7.9.3'
+    container_name: 'ka-kibana'
+    environment:
+      - SERVER_HOST="0"
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - XPACK_SECURITY_ENABLED=false
+    ports:
+      - '5601:5601'
+    depends_on:
+      - elasticsearch
+
+  uam_api:
+    image: muliasukses/ka-uam-api:dev
+    container_name: ka-uam
+    ports:
+      - 8001:8000
+    environment:
+      KA_DEBUG: 'true'
+      KA_BROKER_URL: amqp://dev:dev@rabbitmq:5672
+      KA_DB_PRIMARY: postgresql://dev:dev@db:5432/uam
+      KA_DB_REPLICA: postgresql://dev:dev@db:5432/uam
+      KA_REDIS_URL: redis://redis:6379/1
+      KA_CELERY_BROKER_URL: redis://redis:6379/1
+
+  core_api:
+    image: muliasukses/ka-core-api:dev
+    container_name: ka-core
+    ports:
+      - 8002:8000
+    volumes:
+      - ./media/core/uploads:/srv/app/core/uploads
+    environment:
+      KA_DEBUG: 'true'
+      KA_BROKER_URL: amqp://dev:dev@rabbitmq:5672
+      KA_DB_PRIMARY: postgresql://dev:dev@db:5432/cores
+      KA_DB_REPLICA: postgresql://dev:dev@db:5432/cores
+      KA_REDIS_URL: redis://redis:6379/2
+      KA_CELERY_BROKER_URL: redis://redis:6379/2
+      KA_ELASTIC_URL: http://elasticsearch:9200
+
+  cms_api:
+    image: muliasukses/ka-cms-api:dev
+    container_name: ka-cms
+    ports:
+      - 8003:8000
+    environment:
+      KA_DEBUG: 'true'
+      KA_BROKER_URL: amqp://dev:dev@rabbitmq:5672
+      KA_DB_PRIMARY: postgresql://dev:dev@db:5432/cms
+      KA_DB_REPLICA: postgresql://dev:dev@db:5432/cms
+      KA_REDIS_URL: redis://redis:6379/3
+
+  fulfillment_api:
+    image: muliasukses/ka-fulfillment-api:dev
+    container_name: ka-fulfillment
+    ports:
+      - 8004:8000
+    environment:
+      KA_DEBUG: 'true'
+      KA_BROKER_URL: amqp://dev:dev@rabbitmq:5672
+      KA_DB_PRIMARY: postgresql://dev:dev@db:5432/fulfillment
+      KA_DB_REPLICA: postgresql://dev:dev@db:5432/fulfillment
+      KA_REDIS_URL: redis://redis:6379/4
+      KA_CELERY_BROKER_URL: redis://redis:6379/4
